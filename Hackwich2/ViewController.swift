@@ -22,8 +22,18 @@ class ViewController: UIViewController {
 
 
     @IBAction func pressMeButtonPressed(_ sender: Any) {
-print("helloworld")    }
-    @IBAction func pressawesomePressed(_ sender: Any) {
-   print("awesome") }
+print("helloworld")
+        
+    }
+    
+    @IBAction func pressAwesomePressed(_ sender: Any) {
+        print("awesome")
+        
+    }
+
+    
+    
+    
+    
 }
 
