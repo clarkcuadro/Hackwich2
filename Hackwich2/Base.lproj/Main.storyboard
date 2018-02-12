@@ -27,11 +27,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyw-tG-bhW">
-                                <rect key="frame" x="92" y="398" width="137" height="90"/>
+                                <rect key="frame" x="101" y="387" width="137" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="awesome"/>
+                                <state key="normal" title="segue push"/>
                                 <connections>
                                     <action selector="pressAwesomePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zGn-pI-SfN"/>
+                                    <segue destination="g93-0t-z14" kind="show" id="Med-al-E8n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,6 +43,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-101.25" y="121.47887323943662"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="sUM-eV-h0S">
+            <objects>
+                <viewController id="g93-0t-z14" customClass="SecondViewController" customModule="Hackwich2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n8g-ea-LNX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWz-BV-iUl">
+                                <rect key="frame" x="149" y="274" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnI-w7-qh8">
+                                <rect key="frame" x="113" y="389" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="ChangeColorButtonPressed:" destination="g93-0t-z14" eventType="touchUpInside" id="BMC-CP-OEi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="66y-Sl-nAr"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="TWz-BV-iUl" id="BIp-oT-Fye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRB-OS-mXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615" y="121"/>
         </scene>
     </scenes>
 </document>
